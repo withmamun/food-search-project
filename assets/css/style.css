@@ -55,5 +55,60 @@ a {
 }
 
 
+/*-------------------- Header area css start --------------------*/
+
+.header__area {
+    padding: 15px 0px;
+}
+
+.header__main__blk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__logo a img {
+    width: 140px;
+}
+
+.header__btn a {
+    width: 160px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: #FFC107;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #100F0F;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .4s;
+}
+
+.header__btn a:hover {
+    background-color: #100F0F;
+    color: #fff;
+}
+
+/*-------------------- Header area css end --------------------*/
+
+
+/*-------------------- Hero area css start --------------------*/
+
+.hero__area {
+    background-image: url(../img/hero-bg.jpg);
+}
+
+
+
+
+
+
+
+/*-------------------- Hero area css end --------------------*/
+
+
 /*-------------------- Default area css start --------------------*/
 /*-------------------- Default area css end --------------------*/
