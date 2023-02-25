@@ -88,8 +88,8 @@ a {
 }
 
 .header__btn a:hover {
-    background-color: #100F0F;
-    color: #fff;
+    background-color: #D08B08;
+    color: #100F0F;
 }
 
 /*-------------------- Header area css end --------------------*/
@@ -99,16 +99,294 @@ a {
 
 .hero__area {
     background-image: url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 155px 0px;
+    position: relative;
+    z-index: 1;
 }
 
+.hero__area::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    content: "";
+    z-index: -1;
+    opacity: .4;
+}
 
+.hero__main__blk {
+    text-align: center;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.hero__main__blk h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+}
 
+.hero__main__blk p {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
 
+.hero__search {
+    position: relative;
+    z-index: 1;
+}
 
+.hero__search input {
+    width: 100%;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    color: #100F0F;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 160px;
+}
+
+.hero__search button {
+    width: 150px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: #FFC107;
+    border: none;
+    outline: none;
+    color: #100F0F;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .3s;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hero__search button:hover {
+    background-color: #D08B08;
+    color: #100F0F;
+}
 
 /*-------------------- Hero area css end --------------------*/
 
 
-/*-------------------- Default area css start --------------------*/
-/*-------------------- Default area css end --------------------*/
+/*-------------------- Food area css start --------------------*/
+
+.food__area {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.food__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.food__title h2 {
+    margin-bottom: 0;
+    color: #100F0F;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.food__single__blk {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgba(16, 15, 15, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+
+.food__img__blk {
+    width: 440px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.food__img__blk img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.food__single__blk:hover .food__img__blk img {
+    transform: scale(1.07);
+}
+
+.food__single__content h4 {
+    color: #403F3F;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.food__single__content p {
+    color: #706F6F;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.food__single__content a {
+    color: #FFC107;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.food__single__content a:hover {
+    color: #666;
+}
+
+.food__single__blk:hover {
+    background-color: #fff5dd;
+}
+
+.food__btn__blk {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.food__btn__blk a {
+    width: 160px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: #FFC107;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #100F0F;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .4s;
+}
+
+.food__btn__blk a:hover {
+    background-color: #D08B08;
+    color: #100F0F;
+}
+
+/*-------------------- Food area css end --------------------*/
+
+
+/*-------------------- Footer area css start --------------------*/
+
+.footer__area {
+    background: rgba(255, 193, 7, 0.05);
+    padding: 120px 0px;
+}
+
+.footer__main__blk {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer__single__blk h4 {
+    color: #403F3F;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.footer__single__blk ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__single__blk ul li a {
+    color: #403F3F;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.footer__single__blk ul li a:hover {
+    color: #FFC107;
+}
+
+.footer__single__blk ul li {
+    margin-bottom: 12px;
+}
+
+.footer__single__blk ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer__single__blk {
+    max-width: 40%;
+}
+
+.footer__single__blk p {
+    color: #706F6F;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer__subscribe {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__subscribe input {
+    border: 1px solid rgba(16, 15, 15, 0.2);
+    border-radius: 8px;
+    background-color: transparent;
+    height: 64px;
+    width: 70%;
+    padding: 0px 14px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #403F3F;
+}
+
+.footer__subscribe button {
+    width: 30%;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #FFC107;
+    color: #100F0F;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer__subscribe button:hover {
+    background-color: #D08B08;
+    color: #100F0F;
+}
+
+/*-------------------- Footer area css end --------------------*/
