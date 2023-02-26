@@ -291,6 +291,20 @@ a {
     color: #100F0F;
 }
 
+.modal__main__blk img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.modal__main__blk p {
+    margin-bottom: 0;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
 /*-------------------- Food area css end --------------------*/
 
 
