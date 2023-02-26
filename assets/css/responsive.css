@@ -1,22 +1,3 @@
-/* XL Device :1200px. */
-@media (min-width: 1200px) and (max-width: 1399px) {
-
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl,
-    .container-xxl {
-        max-width: 1140px;
-    }
-
-}
-
-
-
-
-
-
 /* LG Device :992px. */
 @media (min-width: 992px) and (max-width: 1199px) {
 
